@@ -1,0 +1,21 @@
+.headerContainer {
+  display: flex;
+  padding: 24px 80px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.headerBG {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menuItemContainer {
+  display: flex;
+  padding: 12px 8px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
