@@ -51,6 +51,8 @@ export const Button: React.FC<ButtonProps> = (props) => {
           style={{
             color: style === 'default' ? 'white' : color,
             fontSize: fontSizes[size],
+            paddingLeft: containerPaddings[size].h,
+            paddingRight: containerPaddings[size].h,
           }}
         >
           {children}
