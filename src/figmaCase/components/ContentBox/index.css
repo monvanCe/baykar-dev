@@ -1,0 +1,28 @@
+.contentBoxContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.contentBoxTitle {
+  color: var(--Blue-Gray-900, #0f172a);
+  /* Subtitle/XL */
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 22px */
+}
+
+.contentBoxText {
+  color: var(--Blue-Gray-900, #0f172a);
+
+  /* Body/L */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}

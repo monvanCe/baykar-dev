@@ -34,6 +34,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
         backgroundColor: variant === 'default' ? color : 'transparent',
         borderRadius: children ? 8 : 100,
         borderWidth: variant === 'text' ? 0 : 2,
+        padding: 12,
       }}
     >
       {iconLeft && <div className="mx-2">{iconLeft}</div>}
