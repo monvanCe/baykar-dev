@@ -1,0 +1,50 @@
+.caption {
+  color: var(--Blue-Gray-600, #475569);
+
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.headline1 {
+  color: var(--Blue-Gray-900, #0f172a);
+
+  font-family: Roboto;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%;
+}
+
+.headline2 {
+  color: var(--Blue-Gray-900, #0f172a);
+
+  font-family: Roboto;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%;
+}
+
+.text {
+  color: var(--Blue-Gray-900, #0f172a);
+
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.sectionTextButtonContainer {
+  height: 15%;
+  width: 100%;
+}
+
+.sectionTextButton {
+  width: 150px;
+}

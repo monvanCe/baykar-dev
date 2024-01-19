@@ -1,0 +1,35 @@
+.section1Container {
+  display: flex;
+  padding: 80px;
+  align-items: center;
+  gap: 80px;
+  align-self: stretch;
+  height: 583px;
+}
+
+.section1SectionText {
+  height: 75%;
+}
+
+.shoeContainer {
+  width: auto;
+  height: 100%;
+  position: relative;
+}
+
+.shoeBackgroundShape {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  width: 80%;
+  height: 90%;
+  background-color: #fbbf24;
+  z-index: 1;
+  border-radius: 50px;
+}
+
+.shoeContainer img {
+  object-fit: contain;
+  z-index: 2;
+  position: relative;
+}

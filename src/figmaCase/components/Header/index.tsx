@@ -23,7 +23,7 @@ export const Header = () => {
         ))}
 
         <div className="headerButtonContainer">
-          <Button size="M" color="#78350F" style="outline">
+          <Button size="M" color="#78350F" variant="outline">
             Sign up now
           </Button>
         </div>

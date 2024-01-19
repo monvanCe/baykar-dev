@@ -20,3 +20,8 @@
   align-self: stretch;
   cursor: pointer;
 }
+
+.headerButtonContainer {
+  height: 48px;
+  width: 149px;
+}
