@@ -4,10 +4,10 @@ import { Col, Row, Stack } from 'react-bootstrap';
 import { Button } from '../Button';
 import { ContentBox } from '../ContentBox';
 
-import section3Image1 from '../../assets/section3Image1.png';
-import section3Image2 from '../../assets/section3Image2.png';
-import section3Image3 from '../../assets/section3Image3.png';
-import { shopping } from '../../assets/shopping';
+import section3Image1 from '../../assets/Images/section3Image1.png';
+import section3Image2 from '../../assets/Images/section3Image2.png';
+import section3Image3 from '../../assets/Images/section3Image3.png';
+import { shopping } from '../../assets/Icons/shopping';
 import { Section3Rectangles } from '../Section3Rectangles';
 
 const section3Data = [

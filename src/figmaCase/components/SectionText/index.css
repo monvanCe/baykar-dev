@@ -38,11 +38,15 @@
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+
+  margin-top: 32px;
 }
 
 .sectionTextButtonContainer {
   height: 15%;
   width: 100%;
+
+  margin-top: 32px;
 }
 
 .sectionTextButton {

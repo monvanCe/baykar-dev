@@ -1,11 +1,11 @@
 import React from 'react';
 import './index.css';
-import { Col, Row, Stack } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 
-import { checkIcon } from '../../assets/checkIcon';
+import { checkIcon } from '../../assets/Icons/checkIcon';
 import { Button } from '../Button';
 import { ScreenDesktop } from '../ScreenDesktop';
-import VideoImage from '../../assets/Video.png';
+import VideoImage from '../../assets/Images/Video.png';
 import { Section4Rectangles } from '../Section4Rectangles';
 
 export const Section4 = () => {

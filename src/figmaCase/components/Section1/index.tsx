@@ -2,8 +2,8 @@ import React from 'react';
 import './index.css';
 import { SectionText } from '../SectionText';
 
-import shoe from '../../assets/shoe.png';
-import { playCircle } from '../../assets/playCircle';
+import shoe from '../../assets/Images/shoe.png';
+import { playCircle } from '../../assets/Icons/playCircle';
 import { Button } from '../Button';
 
 export const Section1 = () => {

@@ -1,31 +1,44 @@
 .section5Container {
-  height: 732px;
   padding: 80px 80px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  gap: 80px;
 }
 
 .section5Header {
   position: relative;
   z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scrollButtonsContainer {
+  display: flex;
+  gap: 20px;
 }
 
 .section5Body {
   position: relative;
   z-index: 2;
-  height: 430px;
+  height: 480px;
   display: flex;
   gap: 24px;
   margin-left: -80px;
   margin-right: -80px;
+  overflow: hidden;
+  padding-bottom: 50px;
 }
 
 .section5Background {
   position: absolute;
   top: 180px;
+  left: 80px;
+  right: 80px;
+  height: 400px;
+  background-color: #fde68a;
 }
 
 .section5ContentBoxContainer {

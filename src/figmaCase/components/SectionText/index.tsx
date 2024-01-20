@@ -3,6 +3,7 @@ import './index.css';
 
 interface SectionTextProps {
   alignment?: 'Left' | 'Center' | 'Right';
+  color?: string;
   caption?: React.ReactNode;
   headline1?: React.ReactNode;
   headline2?: React.ReactNode;
@@ -14,8 +15,16 @@ interface SectionTextProps {
 
 export const SectionText: React.FC<SectionTextProps> = (props) => {
   const alignment = props?.alignment ?? 'Left';
-  const { caption, headline1, headline2, text, button1, button2, button3 } =
-    props;
+  const {
+    caption,
+    headline1,
+    headline2,
+    text,
+    button1,
+    button2,
+    button3,
+    color,
+  } = props;
 
   const alignments: { [key in 'Left' | 'Center' | 'Right']: string } = {
     Left: 'start',
@@ -28,9 +37,21 @@ export const SectionText: React.FC<SectionTextProps> = (props) => {
       className={`d-flex flex-column align-items-${alignments[alignment]} h-100 justify-content-between`}
     >
       {caption && <div className="caption">{caption}</div>}
-      {headline1 && <div className="headline1">{headline1}</div>}
-      {headline2 && <div className="headline2">{headline2}</div>}
-      {text && <div className="text">{text}</div>}
+      {headline1 && (
+        <div style={{ color: color ? color : '#0f172a' }} className="headline1">
+          {headline1}
+        </div>
+      )}
+      {headline2 && (
+        <div style={{ color: color ? color : '#0f172a' }} className="headline2">
+          {headline2}
+        </div>
+      )}
+      {text && (
+        <div style={{ color: color ? color : '#0f172a' }} className="text">
+          {text}
+        </div>
+      )}
       <div className="d-flex sectionTextButtonContainer">
         {button1 && <div className="h-100 sectionTextButton">{button1}</div>}
         {button2 && <div className="h-100 sectionTextButton">{button2}</div>}

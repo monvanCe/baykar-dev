@@ -61,7 +61,7 @@ export const ContentBox: React.FC<ContentBoxProps> = (props) => {
           style={{
             color,
           }}
-          className={`contentBoxTitle ${theme === 'dark' ? 'mx-4' : ''}`}
+          className={`contentBoxTitle mt-2 ${theme === 'dark' ? 'mx-4' : ''}`}
         >
           {title}
         </div>
@@ -71,7 +71,7 @@ export const ContentBox: React.FC<ContentBoxProps> = (props) => {
           style={{
             color,
           }}
-          className={`contentBoxText ${theme === 'dark' ? 'mx-4' : ''}`}
+          className={`contentBoxText mt-3 ${theme === 'dark' ? 'mx-4' : ''}`}
         >
           {text}
         </div>

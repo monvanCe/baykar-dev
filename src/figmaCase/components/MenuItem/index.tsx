@@ -1,17 +1,21 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 
-export const MenuItem = (props: any) => {
-  //true || false
-  const isVertical = props?.vertical ?? false;
-  //icon object || false
+interface MenuItemProps {
+  isVertical?: boolean;
+  iconLeft?: React.ReactNode;
+  iconRight?: React.ReactNode;
+  badge?: boolean;
+  children?: React.ReactNode;
+}
+
+export const MenuItem: React.FC<MenuItemProps> = (props) => {
+  const isVertical = props?.isVertical ?? false;
   const iconLeft = props?.iconLeft ?? false;
-  //icon object || false
   const iconRight = props?.iconRight ?? false;
-  //badge object || false
   const badge = props?.badge ?? false;
-  //children object
-  const Children = props?.children;
+  const children = props?.children;
 
-  return <>{Children}</>;
+  const combineProps = { isVertical, iconLeft, iconRight, badge };
+
+  return <>{combineProps && children}</>;
 };

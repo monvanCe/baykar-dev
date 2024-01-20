@@ -8,6 +8,7 @@ interface ButtonProps {
   iconLeft?: React.ReactNode;
   iconRight?: React.ReactNode;
   children?: React.ReactNode;
+  onClick?: () => void;
 }
 
 export const Button: React.FC<ButtonProps> = (props) => {
@@ -17,6 +18,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
   const iconLeft = props?.iconLeft;
   const iconRight = props?.iconRight;
   const children = props?.children;
+  const onClick = props?.onClick;
 
   const fontSizes: { [key in 'M' | 'L' | 'XL']: number } = {
     M: 16,
@@ -26,6 +28,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
 
   return (
     <div
+      onClick={onClick}
       className="buttonContainer"
       style={{
         borderColor: color,
@@ -35,7 +38,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
         padding: 12,
       }}
     >
-      {iconLeft && <div className="mx-2">{iconLeft}</div>}
+      {iconLeft && <div className={children ? 'mx-4' : ''}>{iconLeft}</div>}
       {children && (
         <span
           className="buttonText"
@@ -47,7 +50,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
           {children}
         </span>
       )}
-      {iconRight && <div className="mx-2">{iconRight}</div>}
+      {iconRight && <div className={children ? 'mx-4' : ''}>{iconRight}</div>}
     </div>
   );
 };

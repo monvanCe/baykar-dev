@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.css';
-import { Col, Row, Stack } from 'react-bootstrap';
 import { redDot } from '../../assets/redDot';
 import { greenDot } from '../../assets/greenDot';
 import { yellowDot } from '../../assets/yellowDot';
@@ -15,7 +14,7 @@ export const ScreenDesktop: React.FC<ScreenDesktopProps> = (props) => {
   const image = props?.image;
   return (
     <div className="ScreenDesktopContainer">
-      {true && (
+      {circles && (
         <div className="screenDesktopHeader">
           <div>{redDot}</div>
           <div>{yellowDot}</div>

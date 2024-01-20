@@ -1,6 +1,6 @@
-import { gobletIcon } from '../assets/goblet';
-import { tunnelIcon } from '../assets/tunnel';
-import { tvIcon } from '../assets/tvIcon';
+import { gobletIcon } from '../assets/Icons/goblet';
+import { tunnelIcon } from '../assets/Icons/tunnel';
+import { tvIcon } from '../assets/Icons/tvIcon';
 
 export const section2ContentBoxes = [
   {

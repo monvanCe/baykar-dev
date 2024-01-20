@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './index.css';
 import { SectionText } from '../SectionText';
-import { rectangle12 } from '../../assets/rectangles/rectangle12';
 import { ContentBox } from '../ContentBox';
 
-import { section5Icon1 } from '../../assets/section5Icon1';
-import section5Person1 from '../../assets/section5Person1.png';
-import { section5Icon2 } from '../../assets/section5Icon2';
-import section5Person2 from '../../assets/section5Person2.png';
-import { section5Icon3 } from '../../assets/section5Icon3';
-import section5Person3 from '../../assets/section5Person3.png';
-import { section5Icon4 } from '../../assets/section5Icon4';
-import section5Person4 from '../../assets/section5Person4.png';
+import { section5Icon1 } from '../../assets/Logos/section5Icon1';
+import section5Person1 from '../../assets/Images/section5Person1.png';
+import { section5Icon2 } from '../../assets/Logos/section5Icon2';
+import section5Person2 from '../../assets/Images/section5Person2.png';
+import { section5Icon3 } from '../../assets/Logos/section5Icon3';
+import section5Person3 from '../../assets/Images/section5Person3.png';
+import { section5Icon4 } from '../../assets/Logos/section5Icon4';
+import section5Person4 from '../../assets/Images/section5Person4.png';
+import { Button } from '../Button';
+import { iconLeft } from '../../assets/Icons/iconLeft';
+import { iconRight } from '../../assets/Icons/iconRight';
 
 export const Section5 = () => {
   const cards = [
@@ -45,12 +47,52 @@ export const Section5 = () => {
     },
   ];
 
+  const bodyRef: any = useRef();
+
+  const scrollLeft = () => {
+    let i = 0;
+    let scroll = -200;
+
+    const x = setInterval(() => {
+      bodyRef.current.scrollLeft -= 5;
+      i -= 5;
+
+      i === scroll && clearInterval(x);
+    }, 5);
+  };
+
+  const scrollRight = () => {
+    let i = 0;
+    let scroll = 200;
+
+    const x = setInterval(() => {
+      bodyRef.current.scrollLeft += 5;
+      i += 5;
+
+      i === scroll && clearInterval(x);
+    }, 5);
+  };
+
   return (
     <div className="section5Container">
       <div className="section5Header">
         <SectionText headline2="Because they love us" />
+        <div className="scrollButtonsContainer">
+          <Button
+            iconRight={iconLeft}
+            color="#78350F"
+            variant="outline"
+            onClick={scrollLeft}
+          />
+          <Button
+            iconRight={iconRight}
+            color="#78350F"
+            variant="outline"
+            onClick={scrollRight}
+          />
+        </div>
       </div>
-      <div className="section5Body">
+      <div className="section5Body" ref={bodyRef}>
         {[...cards, ...cards].map((card, index) => (
           <div className="section5ContentBoxContainer">
             <ContentBox
@@ -69,7 +111,7 @@ export const Section5 = () => {
           </div>
         ))}
       </div>
-      <div className="section5Background">{rectangle12}</div>
+      <div className="section5Background"></div>
     </div>
   );
 };

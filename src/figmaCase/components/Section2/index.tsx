@@ -10,7 +10,7 @@ export const Section2 = () => {
       {section2ContentBoxes.map((box, index) => (
         <Col key={index}>
           <div className="w-100 h-100">
-            <div style={{ height: 205 }}>
+            <div>
               <ContentBox icon={box.icon} title={box.title} text={box.text} />
             </div>
           </div>

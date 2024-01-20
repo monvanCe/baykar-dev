@@ -1,6 +1,15 @@
 body,
 html {
   background-color: #fffbeb;
+  overflow-x: hidden;
+}
+
+div,
+p,
+span {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .background-container {
