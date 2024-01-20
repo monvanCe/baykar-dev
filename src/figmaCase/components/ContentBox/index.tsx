@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Row, Stack } from 'react-bootstrap';
 
 interface userObjectInterface {
   image?: React.ReactNode;
@@ -15,6 +15,7 @@ interface ContentBoxProps {
   text?: string;
   button?: React.ReactNode;
   user?: userObjectInterface;
+  theme?: 'dark' | 'light' | 'transparent';
 }
 
 export const ContentBox: React.FC<ContentBoxProps> = (props) => {
@@ -24,20 +25,57 @@ export const ContentBox: React.FC<ContentBoxProps> = (props) => {
   const text = props?.text;
   const button = props?.button;
   const user = props?.user;
+  const theme = props?.theme ?? 'transparent';
+
+  const backgroundColor: string =
+    theme === 'dark' ? '#0f172a' : theme === 'light' ? 'white' : 'transparent';
+
+  const color: string = theme === 'dark' ? 'white' : '#0f172a';
+
+  const boxShadow =
+    theme === 'dark'
+      ? '0px 0px 15px 0px rgba(255, 255, 255, 0.07), 0px 25px 50px -12px rgba(255, 255, 255, 0.25)'
+      : theme === 'light'
+      ? '0px 0px 15px 0px rgba(0, 0, 0, 0.07), 0px 25px 50px -12px rgba(0, 0, 0, 0.10)'
+      : '0';
 
   return (
-    <Col className="contentBoxContainer">
-      <Row className="justify-content-start">
-        <Col>{icon}</Col>
-      </Row>
+    <Stack
+      style={{
+        backgroundColor,
+        boxShadow,
+      }}
+      className="h-100 w-100 justify-content-between rounded overflow-hidden"
+    >
+      {icon && (
+        <Row className="justify-content-start">
+          <Col>{icon}</Col>
+        </Row>
+      )}
       <Row>{image}</Row>
       <Row>
-        <div className="contentBoxTitle">{title}</div>
+        <div
+          style={{
+            color,
+          }}
+          className={`contentBoxTitle ${theme === 'transparent' ? '' : 'mx-4'}`}
+        >
+          {title}
+        </div>
       </Row>
       <Row>
-        <div className="contentBoxText">{text}</div>
+        <div
+          style={{
+            color,
+          }}
+          className={`contentBoxText ${theme === 'transparent' ? '' : 'mx-4'}`}
+        >
+          {text}
+        </div>
       </Row>
-      <Row>{button}</Row>
+      <Row>
+        <Col className="mx-4">{button}</Col>
+      </Row>
       <Row>
         <Col>{user?.image}</Col>
         <Col>
@@ -45,6 +83,6 @@ export const ContentBox: React.FC<ContentBoxProps> = (props) => {
           <div>{user?.job}</div>
         </Col>
       </Row>
-    </Col>
+    </Stack>
   );
 };

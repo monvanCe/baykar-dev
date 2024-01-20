@@ -29,8 +29,6 @@ export const Button: React.FC<ButtonProps> = (props) => {
       className="buttonContainer"
       style={{
         borderColor: color,
-        height: '100%',
-        width: '100%',
         backgroundColor: variant === 'default' ? color : 'transparent',
         borderRadius: children ? 8 : 100,
         borderWidth: variant === 'text' ? 0 : 2,

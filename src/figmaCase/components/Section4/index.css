@@ -1,0 +1,43 @@
+.section4Container {
+  height: 816px;
+  padding: 160px 80px;
+  position: relative;
+}
+
+.section4Body {
+  height: 100%;
+  border-radius: 30px;
+  padding: 80px;
+  background: var(--White, #fff);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07),
+    0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.section4BodyInner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section4BodyTitle {
+  color: var(--Blue-Gray-900, #0f172a);
+
+  /* Heading/2 */
+  font-family: Roboto;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%; /* 61.6px */
+}
+
+.sectionBodyCustomCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.section4Video {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}

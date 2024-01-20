@@ -2,4 +2,7 @@
   padding: 80px;
   gap: 80px;
   height: 365px;
+  z-index: 3;
+  position: relative;
+  overflow: hidden;
 }

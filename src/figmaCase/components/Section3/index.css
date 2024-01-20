@@ -1,0 +1,26 @@
+.section3Container {
+  height: 776px;
+  width: 100%;
+  padding: 80px;
+  background: var(--Blue-Gray-900, #0f172a);
+  gap: 80px;
+  position: relative;
+}
+
+.section3HeaderContainer {
+  z-index: 2;
+}
+.section3HeaderTitle {
+  color: var(--White, #fff);
+  /* Heading/2 */
+  font-family: Roboto;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%; /* 61.6px */
+}
+
+.section3Body {
+  gap: 48px;
+  z-index: 2;
+}

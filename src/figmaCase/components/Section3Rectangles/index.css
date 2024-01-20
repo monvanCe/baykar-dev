@@ -1,0 +1,37 @@
+.Section3RectanglesContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.rectangle1 {
+  position: absolute;
+  top: 52%;
+  left: 2.5%;
+}
+
+.rectangle2 {
+  position: absolute;
+  left: 34%;
+  top: 24%;
+}
+
+.rectangle3 {
+  position: absolute;
+  right: 35%;
+  top: 70%;
+}
+
+.rectangle4 {
+  position: absolute;
+  right: 11%;
+  top: 67%;
+}
+
+.rectangle5 {
+  position: absolute;
+  right: 3%;
+  top: 37%;
+}
