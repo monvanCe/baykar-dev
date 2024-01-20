@@ -27,10 +27,10 @@ export const SectionText: React.FC<SectionTextProps> = (props) => {
     <div
       className={`d-flex flex-column align-items-${alignments[alignment]} h-100 justify-content-between`}
     >
-      <div className="caption">{caption}</div>
-      <div className="headline1">{headline1}</div>
-      <div className="headline2">{headline2}</div>
-      <div className="text">{text}</div>
+      {caption && <div className="caption">{caption}</div>}
+      {headline1 && <div className="headline1">{headline1}</div>}
+      {headline2 && <div className="headline2">{headline2}</div>}
+      {text && <div className="text">{text}</div>}
       <div className="d-flex sectionTextButtonContainer">
         {button1 && <div className="h-100 sectionTextButton">{button1}</div>}
         {button2 && <div className="h-100 sectionTextButton">{button2}</div>}

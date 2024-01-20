@@ -1,5 +1,4 @@
 .section4Container {
-  height: 816px;
   padding: 160px 80px;
   position: relative;
 }
@@ -16,6 +15,7 @@
 .section4BodyInner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .section4BodyTitle {

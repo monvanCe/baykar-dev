@@ -39,11 +39,14 @@ export const ContentBox: React.FC<ContentBoxProps> = (props) => {
       ? '0px 0px 15px 0px rgba(0, 0, 0, 0.07), 0px 25px 50px -12px rgba(0, 0, 0, 0.10)'
       : '0';
 
+  const padding = theme === 'light' ? 32 : 0;
+
   return (
     <Stack
       style={{
         backgroundColor,
         boxShadow,
+        padding,
       }}
       className="h-100 w-100 justify-content-between rounded overflow-hidden"
     >
@@ -58,7 +61,7 @@ export const ContentBox: React.FC<ContentBoxProps> = (props) => {
           style={{
             color,
           }}
-          className={`contentBoxTitle ${theme === 'transparent' ? '' : 'mx-4'}`}
+          className={`contentBoxTitle ${theme === 'dark' ? 'mx-4' : ''}`}
         >
           {title}
         </div>
@@ -68,7 +71,7 @@ export const ContentBox: React.FC<ContentBoxProps> = (props) => {
           style={{
             color,
           }}
-          className={`contentBoxText ${theme === 'transparent' ? '' : 'mx-4'}`}
+          className={`contentBoxText ${theme === 'dark' ? 'mx-4' : ''}`}
         >
           {text}
         </div>
@@ -76,11 +79,11 @@ export const ContentBox: React.FC<ContentBoxProps> = (props) => {
       <Row>
         <Col className="mx-4">{button}</Col>
       </Row>
-      <Row>
-        <Col>{user?.image}</Col>
-        <Col>
-          <div>{user?.name}</div>
-          <div>{user?.job}</div>
+      <Row className="justify-content-center align-items-center">
+        <Col md={3}>{user?.image}</Col>
+        <Col md={9}>
+          <div className="personName">{user?.name}</div>
+          <div className="personJob">{user?.job}</div>
         </Col>
       </Row>
     </Stack>

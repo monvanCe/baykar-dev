@@ -4,12 +4,12 @@
   align-items: center;
   gap: 80px;
   align-self: stretch;
-  height: 583px;
+
   justify-content: space-between;
 }
 
 .section1SectionText {
-  height: 75%;
+  height: 257px;
 }
 
 .shoeContainer {

@@ -17,3 +17,23 @@
 
   max-width: 90%;
 }
+
+.personName {
+  color: var(--Black, #000);
+  /* Body/L */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+
+.personJob {
+  color: var(--Blue-Gray-600, #475569);
+  /* Body/M */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}

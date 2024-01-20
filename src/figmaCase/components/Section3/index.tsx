@@ -42,22 +42,26 @@ export const Section3 = () => {
       <Row className="section3Body h-100">
         {section3Data.map((item, index) => (
           <Col key={index} className="p-0">
-            <ContentBox
-              theme="dark"
-              image={<img src={item.image} alt={`section3Image${index + 1}`} />}
-              title={commonTitle}
-              text={commonText}
-              button={
-                <Button
-                  size="M"
-                  color="white"
-                  variant="outline"
-                  iconLeft={shopping}
-                >
-                  Buy Now
-                </Button>
-              }
-            />
+            <div style={{ height: 472 }}>
+              <ContentBox
+                theme="dark"
+                image={
+                  <img src={item.image} alt={`section3Image${index + 1}`} />
+                }
+                title={commonTitle}
+                text={commonText}
+                button={
+                  <Button
+                    size="M"
+                    color="white"
+                    variant="outline"
+                    iconLeft={shopping}
+                  >
+                    Buy Now
+                  </Button>
+                }
+              />
+            </div>
           </Col>
         ))}
       </Row>
