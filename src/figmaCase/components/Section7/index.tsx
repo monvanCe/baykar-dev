@@ -23,7 +23,7 @@ export const Section7 = () => {
       <div className="section7Col">
         <div className="section7ColEllipse">{Ellipse}</div>
         <div className="section7Tooltip">{Section7Tooltip}</div>
-        <img src={Section7Shoe} />
+        <img src={Section7Shoe} alt="section7Shoe" />
       </div>
     </div>
   );

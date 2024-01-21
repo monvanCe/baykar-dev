@@ -9,7 +9,6 @@ import { rocketIcon } from '../../assets/Icons/rocketIcon';
 import { screenIcon } from '../../assets/Icons/screenIcon';
 import { podcastIcon } from '../../assets/Icons/podcastIcon';
 import { settingIcon } from '../../assets/Icons/settingIcon';
-import shoe from '../../assets/Images/shoe.png';
 import { ScreenDesktop } from '../ScreenDesktop';
 import Section6Image1 from '../../assets/Images/Section6Image1.png';
 import Section6Image2 from '../../assets/Images/Section6Image2.png';
@@ -66,7 +65,10 @@ Nec magna sed interdum sit purus tellus. Et volutpat proin neque placerat at bib
         </div>
         <div className="section6BodyScreens">
           <div style={{ height: 451, width: 759 }}>
-            <ScreenDesktop circles image={<img src={Section6Image1} />} />
+            <ScreenDesktop
+              circles
+              image={<img src={Section6Image1} alt="section6Image1" />}
+            />
           </div>
           <div
             style={{
@@ -77,7 +79,10 @@ Nec magna sed interdum sit purus tellus. Et volutpat proin neque placerat at bib
               bottom: 0,
             }}
           >
-            <ScreenDesktop circles image={<img src={Section6Image2} />} />
+            <ScreenDesktop
+              circles
+              image={<img src={Section6Image2} alt="section6Image2" />}
+            />
           </div>
           <div
             style={{
@@ -88,7 +93,7 @@ Nec magna sed interdum sit purus tellus. Et volutpat proin neque placerat at bib
               bottom: 68,
             }}
           >
-            <img src={Section6Image3} />
+            <img src={Section6Image3} alt="section6Image3" />
           </div>
         </div>
       </div>

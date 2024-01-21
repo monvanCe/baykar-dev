@@ -1,0 +1,12 @@
+.bar {
+  flex: 1;
+  margin: 2px;
+}
+
+.bar:nth-child(-n + 20) {
+  background-color: #639754;
+}
+
+.bar:nth-child(n + 21) {
+  background-color: #e03c32;
+}

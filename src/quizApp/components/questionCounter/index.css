@@ -1,0 +1,9 @@
+.questionCounterText {
+  color: white;
+
+  font-family: Roboto;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+}

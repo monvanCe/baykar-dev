@@ -15,7 +15,7 @@ import { Button } from '../Button';
 import { iconLeft } from '../../assets/Icons/iconLeft';
 import { iconRight } from '../../assets/Icons/iconRight';
 
-export const Section5 = () => {
+export const Section5: React.FC = () => {
   const cards = [
     {
       icon: section5Icon1,

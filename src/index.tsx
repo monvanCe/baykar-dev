@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './Main';
 import FigmaCase from './figmaCase';
 import QuizApp from './quizApp';
+import { Provider } from './quizApp/data/AppContext';
 
 export const App = () => {
   return (
@@ -21,4 +22,9 @@ export const App = () => {
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-root.render(<App />);
+
+root.render(
+  <Provider>
+    <App />
+  </Provider>
+);
