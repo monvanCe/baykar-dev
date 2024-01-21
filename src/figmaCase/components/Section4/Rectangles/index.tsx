@@ -1,12 +1,12 @@
 import React from 'react';
 import './index.css';
 
-import { rectangle6 } from '../../assets/rectangles/rectangle6';
-import { rectangle7 } from '../../assets/rectangles/rectangle7';
-import { rectangle8 } from '../../assets/rectangles/rectangle8';
-import { rectangle9 } from '../../assets/rectangles/rectangle9';
-import { rectangle10 } from '../../assets/rectangles/rectangle10';
-import { rectangle11 } from '../../assets/rectangles/rectangle11';
+import { rectangle6 } from '../../../assets/rectangles/rectangle6';
+import { rectangle7 } from '../../../assets/rectangles/rectangle7';
+import { rectangle8 } from '../../../assets/rectangles/rectangle8';
+import { rectangle9 } from '../../../assets/rectangles/rectangle9';
+import { rectangle10 } from '../../../assets/rectangles/rectangle10';
+import { rectangle11 } from '../../../assets/rectangles/rectangle11';
 
 export const Section4Rectangles = () => {
   return (

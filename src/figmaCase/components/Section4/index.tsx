@@ -6,7 +6,7 @@ import { checkIcon } from '../../assets/Icons/checkIcon';
 import { Button } from '../Button';
 import { ScreenDesktop } from '../ScreenDesktop';
 import VideoImage from '../../assets/Images/Video.png';
-import { Section4Rectangles } from '../Section4Rectangles';
+import { Section4Rectangles } from './Rectangles';
 
 export const Section4 = () => {
   return (

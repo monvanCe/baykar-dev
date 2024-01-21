@@ -1,9 +1,9 @@
 import React from 'react';
 import './index.css';
 
-import { HeaderBGText } from '../HeaderBGText';
+import { HeaderBGText } from './GroupText';
 import { MenuItem } from '../MenuItem';
-import { HeaderText } from '../HeaderText';
+import { HeaderText } from './HeaderText';
 import { Button } from '../Button';
 
 export const Header = () => {

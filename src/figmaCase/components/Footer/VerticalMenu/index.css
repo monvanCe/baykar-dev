@@ -1,0 +1,23 @@
+.verticalMenuContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.verticalMenuLinkContainer {
+  display: flex;
+  padding: 12px 0px;
+  align-items: center;
+  gap: 8px;
+}
+
+.verticalMenuLink {
+  color: var(--Blue-Gray-200, #e2e8f0);
+  /* Body/M */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
