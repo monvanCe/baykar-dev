@@ -6,6 +6,7 @@ import Main from './Main';
 import FigmaCase from './figmaCase';
 import QuizApp from './quizApp';
 import { Provider } from './quizApp/data/AppContext';
+import { Results } from './quizApp/components/Results';
 
 export const App = () => {
   return (
@@ -14,6 +15,7 @@ export const App = () => {
         <Route path="/" element={<Main />} />
         <Route path="figmaCase" element={<FigmaCase />} />
         <Route path="quizApp" element={<QuizApp />} />
+        <Route path="Result" element={<Results />} />
       </Routes>
     </BrowserRouter>
   );

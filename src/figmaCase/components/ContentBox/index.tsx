@@ -47,8 +47,9 @@ export const ContentBox: React.FC<ContentBoxProps> = (props) => {
         backgroundColor,
         boxShadow,
         padding,
+        height: theme === 'light' ? 430 : 'auto',
       }}
-      className="h-100 w-100 justify-content-between rounded overflow-hidden"
+      className="rounded justify-content-between overflow-hidden"
     >
       {icon && (
         <Row className="justify-content-start">
@@ -60,8 +61,11 @@ export const ContentBox: React.FC<ContentBoxProps> = (props) => {
         <div
           style={{
             color,
+            marginTop: theme === 'dark' ? 32 : 16,
+            marginLeft: theme === 'dark' ? 32 : 0,
+            marginRight: theme === 'dark' ? 32 : 0,
           }}
-          className={`contentBoxTitle mt-2 ${theme === 'dark' ? 'mx-4' : ''}`}
+          className=" contentBoxTitle"
         >
           {title}
         </div>
@@ -70,14 +74,17 @@ export const ContentBox: React.FC<ContentBoxProps> = (props) => {
         <div
           style={{
             color,
+            marginTop: 16,
+            marginLeft: theme === 'dark' ? 32 : 0,
+            marginRight: theme === 'dark' ? 32 : 0,
           }}
-          className={`contentBoxText mt-3 ${theme === 'dark' ? 'mx-4' : ''}`}
+          className="contentBoxText"
         >
           {text}
         </div>
       </Row>
       <Row>
-        <Col className="mx-4">{button}</Col>
+        <Col style={{ margin: 32 }}>{button}</Col>
       </Row>
       <Row className="justify-content-center align-items-center">
         <Col md={3}>{user?.image}</Col>

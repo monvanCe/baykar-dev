@@ -26,6 +26,14 @@ export const Button: React.FC<ButtonProps> = (props) => {
     XL: 24,
   };
 
+  const padding: {
+    [key in 'M' | 'L' | 'XL']: { [key in 'h' | 'v' | 't']: number };
+  } = {
+    M: { h: 12, v: 12, t: 16 },
+    L: { h: 16, v: 16, t: 16 },
+    XL: { h: 24, v: 20, t: 24 },
+  };
+
   return (
     <div
       onClick={onClick}
@@ -35,22 +43,27 @@ export const Button: React.FC<ButtonProps> = (props) => {
         backgroundColor: variant === 'default' ? color : 'transparent',
         borderRadius: children ? 8 : 100,
         borderWidth: variant === 'text' ? 0 : 2,
-        padding: 12,
+        paddingRight: padding[size].h,
+        paddingLeft: padding[size].h,
+        paddingTop: padding[size].v,
+        paddingBottom: padding[size].v,
       }}
     >
-      {iconLeft && <div className={children ? 'mx-4' : ''}>{iconLeft}</div>}
+      {iconLeft && <div>{iconLeft}</div>}
       {children && (
-        <span
+        <div
           className="buttonText"
           style={{
             color: variant === 'default' ? 'white' : color,
             fontSize: fontSizes[size],
+            paddingLeft: padding[size].t,
+            paddingRight: padding[size].t,
           }}
         >
           {children}
-        </span>
+        </div>
       )}
-      {iconRight && <div className={children ? 'mx-4' : ''}>{iconRight}</div>}
+      {iconRight && <div>{iconRight}</div>}
     </div>
   );
 };

@@ -5,7 +5,7 @@ import React, {
   SetStateAction,
   useEffect,
 } from 'react';
-import { Data, initialData } from '../utils/interfaces';
+import { Data, InitialData } from '../utils/interfaces';
 
 const AppContext = createContext<{
   data: null | Data;
@@ -18,7 +18,7 @@ const AppContext = createContext<{
 export const Provider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [data, setData] = useState<null | Data>(initialData);
+  const [data, setData] = useState<null | Data>(InitialData);
 
   useEffect(() => {
     console.log(data);

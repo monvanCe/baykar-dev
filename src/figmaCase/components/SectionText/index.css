@@ -1,3 +1,11 @@
+.sectionTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
 .caption {
   color: var(--Blue-Gray-600, #475569);
 
@@ -38,17 +46,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
-
-  margin-top: 32px;
 }
 
 .sectionTextButtonContainer {
-  height: 15%;
-  width: 100%;
-
-  margin-top: 32px;
-}
-
-.sectionTextButton {
-  width: 150px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }

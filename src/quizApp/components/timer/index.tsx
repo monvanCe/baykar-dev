@@ -14,7 +14,6 @@ export const Timer: React.FC = () => {
             key={i}
             className="bar"
             style={{
-              //@ts-ignore undefined senaryosu hesaba katıldı
               opacity: i >= data?.time ? 0.5 : 1,
             }}
           />

@@ -42,7 +42,7 @@ export const Section3 = () => {
       <Row className="section3Body h-100">
         {section3Data.map((item, index) => (
           <Col key={index} className="p-0">
-            <div style={{ height: 472 }}>
+            <div>
               <ContentBox
                 theme="dark"
                 image={

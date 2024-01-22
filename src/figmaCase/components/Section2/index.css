@@ -5,3 +5,7 @@
   position: relative;
   overflow: hidden;
 }
+
+.section2ContentBoxContainer {
+  min-width: 200px;
+}

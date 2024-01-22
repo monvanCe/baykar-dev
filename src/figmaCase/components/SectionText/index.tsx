@@ -33,9 +33,7 @@ export const SectionText: React.FC<SectionTextProps> = (props) => {
   };
 
   return (
-    <div
-      className={`d-flex flex-column align-items-${alignments[alignment]} h-100 justify-content-between`}
-    >
+    <div className="sectionTextContainer">
       {caption && <div className="caption">{caption}</div>}
       {headline1 && (
         <div style={{ color: color ? color : '#0f172a' }} className="headline1">
@@ -52,10 +50,10 @@ export const SectionText: React.FC<SectionTextProps> = (props) => {
           {text}
         </div>
       )}
-      <div className="d-flex sectionTextButtonContainer">
-        {button1 && <div className="h-100 sectionTextButton">{button1}</div>}
-        {button2 && <div className="h-100 sectionTextButton">{button2}</div>}
-        {button3 && <div className="h-100 sectionTextButton">{button3}</div>}
+      <div className="sectionTextButtonContainer">
+        {button1 && <div className=" sectionTextButton">{button1}</div>}
+        {button2 && <div className=" sectionTextButton">{button2}</div>}
+        {button3 && <div className=" sectionTextButton">{button3}</div>}
       </div>
     </div>
   );

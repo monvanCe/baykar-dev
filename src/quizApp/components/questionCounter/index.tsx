@@ -8,7 +8,9 @@ export const QuestionCounter: React.FC = () => {
 
   return (
     <div className="h-100 w-100 d-flex justify-content-center align-items-center bg-danger">
-      <div className="questionCounterText">{data?.currentQuestion ?? 0}</div>
+      <div className="questionCounterText">
+        {data?.currentQuestion !== undefined ? data.currentQuestion + 1 : 0}
+      </div>
     </div>
   );
 };

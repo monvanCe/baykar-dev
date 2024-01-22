@@ -6,10 +6,10 @@ import shoe from '../../assets/Images/shoe.png';
 import { playCircle } from '../../assets/Icons/playCircle';
 import { Button } from '../Button';
 
-export const Section1 = () => {
+export const Section1: React.FC = () => {
   return (
     <div className="section1Container">
-      <div className="section1SectionText">
+      <div className="section1SectionTextContainer">
         <SectionText
           text="Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices amet."
           headline1={'Collectible Sneakers'}

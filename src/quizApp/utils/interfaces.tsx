@@ -1,18 +1,20 @@
-export interface Question {
-  question: string;
-  text: string;
-}
-
 export interface Data {
   time?: number;
-  questions?: Question[];
+  questions?: Response[];
   answers?: number[];
   currentQuestion?: number;
 }
 
-export const initialData: Data = {
+export interface Response {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
+}
+
+export const InitialData: Data = {
   time: undefined,
   questions: undefined,
-  answers: undefined,
+  answers: Array.from({ length: 10 }, () => 0),
   currentQuestion: undefined,
 };
