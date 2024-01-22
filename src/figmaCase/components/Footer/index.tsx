@@ -7,7 +7,7 @@ import { appStore } from '../../assets/appStore';
 import { googlePlay } from '../../assets/googlePlay';
 import { SocialIcons } from './SocialIcons';
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
   return (
     <div className="footerContainer">
       <div className="footerColumns">

@@ -7,7 +7,7 @@ import { Ellipse } from '../../assets/Ellipse';
 import Section7Shoe from '../../assets/Section7Shoe.png';
 import { Section7Tooltip } from '../../assets/Section7Tooltip';
 
-export const Section7 = () => {
+export const Section7: React.FC = () => {
   return (
     <div className="section7Container">
       <div className="section7Chart">{chart}</div>

@@ -15,7 +15,7 @@ import Section6Image2 from '../../assets/Images/Section6Image2.png';
 import Section6Image3 from '../../assets/Images/Section6Image3.png';
 import { Waves } from '../../assets/Waves';
 
-export const Section6 = () => {
+export const Section6: React.FC = () => {
   return (
     <div className="section6Container">
       <div className="section6HeaderContainer">
@@ -64,35 +64,19 @@ Nec magna sed interdum sit purus tellus. Et volutpat proin neque placerat at bib
           </div>
         </div>
         <div className="section6BodyScreens">
-          <div style={{ height: 451, width: 759 }}>
+          <div className="section6Screen1">
             <ScreenDesktop
               circles
               image={<img src={Section6Image1} alt="section6Image1" />}
             />
           </div>
-          <div
-            style={{
-              height: 451,
-              width: 759,
-              position: 'absolute',
-              right: 91,
-              bottom: 0,
-            }}
-          >
+          <div className="section6Screen2">
             <ScreenDesktop
               circles
               image={<img src={Section6Image2} alt="section6Image2" />}
             />
           </div>
-          <div
-            style={{
-              width: 256,
-              height: 286,
-              position: 'absolute',
-              right: 0,
-              bottom: 68,
-            }}
-          >
+          <div className="section6Screen3">
             <img src={Section6Image3} alt="section6Image3" />
           </div>
         </div>

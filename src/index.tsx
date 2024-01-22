@@ -7,8 +7,9 @@ import FigmaCase from './figmaCase';
 import QuizApp from './quizApp';
 import { Provider } from './quizApp/data/AppContext';
 import { Results } from './quizApp/components/Results';
+import React from 'react';
 
-export const App = () => {
+export const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>

@@ -6,6 +6,13 @@
   overflow: hidden;
 }
 
-.section2ContentBoxContainer {
-  min-width: 200px;
+@media screen and (max-width: 767px) {
+  .section2Container {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 16px;
+    gap: 32px;
+
+    text-align: center;
+  }
 }

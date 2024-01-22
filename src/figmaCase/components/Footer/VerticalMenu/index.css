@@ -3,6 +3,7 @@
   align-items: center;
   gap: 16px;
   align-self: stretch;
+  justify-content: center;
 }
 
 .verticalMenuLinkContainer {

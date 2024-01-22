@@ -26,6 +26,10 @@
   gap: 16px;
 }
 
+.section6BodyButtons::-webkit-scrollbar {
+  display: none;
+}
+
 .section6ButtonContainer {
   border-radius: 8px;
   background: var(--White, #fffbeb);
@@ -50,9 +54,73 @@
   z-index: 2;
 }
 
+.section6Screen1 {
+  height: 451px;
+  width: 759px;
+}
+
+.section6Screen2 {
+  height: 451px;
+  width: 759px;
+  position: absolute;
+  right: 91px;
+  bottom: 0px;
+}
+
+.section6Screen3 {
+  width: 256px;
+  height: 286px;
+  position: absolute;
+  right: 0px;
+  bottom: 68px;
+}
+
+.section6Screen3 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .section6BG {
   position: absolute;
   bottom: 0px;
   left: 0px;
   right: 0px;
+}
+
+@media screen and (max-width: 1269px) {
+  .section6BodyButtons {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 5px;
+  }
+  .section6Container {
+    padding: 48px 16px 96px 16px;
+    gap: 32px;
+  }
+  .section6BodyContainer {
+    gap: 32px;
+  }
+  .section6Screen1 {
+    width: 70vw;
+    height: 35vh;
+  }
+  .section6Screen2 {
+    width: 70vw;
+    height: 35vh;
+    position: absolute;
+    right: 30px;
+    bottom: 200px;
+  }
+  .section6Screen3 {
+    height: 30vh;
+    aspect-ratio: 1;
+    right: 0px;
+    bottom: 150px;
+  }
 }

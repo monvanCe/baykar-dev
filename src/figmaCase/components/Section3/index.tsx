@@ -26,14 +26,14 @@ const commonTitle = 'Title';
 const commonText =
   'Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.';
 
-export const Section3 = () => {
+export const Section3: React.FC = () => {
   return (
     <Stack className="section3Container">
       <Row className="section3HeaderContainer">
         <Col md={9} className="section3HeaderTitle">
           The best of the best
         </Col>
-        <Col md={3}>
+        <Col md={3} className="section3HeaderButton">
           <Button size="XL" color="white" variant="outline">
             Sign Up Now
           </Button>

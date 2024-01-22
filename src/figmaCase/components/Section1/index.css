@@ -6,7 +6,6 @@
 
   gap: 80px;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .section1SectionTextContainer {
@@ -35,4 +34,17 @@
   object-fit: contain;
   z-index: 2;
   position: relative;
+}
+
+@media screen and (max-width: 998px) {
+  .section1Container {
+    padding: 48px 16px;
+    flex-direction: column;
+  }
+
+  .section1Container div {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
 }

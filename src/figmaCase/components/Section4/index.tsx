@@ -8,7 +8,7 @@ import { ScreenDesktop } from '../ScreenDesktop';
 import VideoImage from '../../assets/Images/Video.png';
 import { Section4Rectangles } from './Rectangles';
 
-export const Section4 = () => {
+export const Section4: React.FC = () => {
   return (
     <div className="section4Container">
       <div className="section4Body">
@@ -16,20 +16,19 @@ export const Section4 = () => {
           <div className="section4BodyTitle">Why join us</div>
           <div>
             <Row>
-              <Col md={1}>{checkIcon}</Col>
-              <Col md={11}>
-                Est et in pharetra magna adipiscing ornare aliquam.
+              <Col>
+                {checkIcon} Est et in pharetra magna adipiscing ornare aliquam.
               </Col>
             </Row>
             <Row>
-              <Col md={1}>{checkIcon}</Col>
-              <Col md={11}>
-                Tellus arcu sed consequat ac velit ut eu blandit.
+              <Col>
+                {checkIcon} Tellus arcu sed consequat ac velit ut eu blandit.
               </Col>
             </Row>
             <Row>
-              <Col md={1}>{checkIcon}</Col>
-              <Col md={11}>Ullamcorper ornare in et egestas dolor orci.</Col>
+              <Col>
+                {checkIcon} Ullamcorper ornare in et egestas dolor orci.
+              </Col>
             </Row>
           </div>
           <div>

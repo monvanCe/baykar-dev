@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
-const App = () => {
+const App: React.FC = () => {
   const navigate = useNavigate();
 
   return (

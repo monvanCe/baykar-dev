@@ -6,7 +6,7 @@ import { rectangle3 } from '../../../assets/rectangles/rectangle3';
 import { rectangle4 } from '../../../assets/rectangles/rectangle4';
 import { rectangle5 } from '../../../assets/rectangles/rectangle5';
 
-export const Section3Rectangles = () => {
+export const Section3Rectangles: React.FC = () => {
   return (
     <div className="Section3RectanglesContainer">
       <div className="rectangle1">{rectangle1}</div>

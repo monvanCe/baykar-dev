@@ -24,3 +24,21 @@
 .headerButtonContainer {
   height: 48px;
 }
+
+.headerBGMobile {
+  display: none;
+}
+
+@media screen and (max-width: 998px) {
+  .headerContainer {
+    padding: 16px;
+  }
+
+  .headerBG {
+    display: none;
+  }
+
+  .headerBGMobile {
+    display: block;
+  }
+}

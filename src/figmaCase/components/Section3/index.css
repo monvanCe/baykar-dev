@@ -22,3 +22,18 @@
   gap: 48px;
   z-index: 2;
 }
+
+@media screen and (max-width: 895px) {
+  .section3Container {
+    padding: 48px 16px;
+    gap: 32px;
+  }
+  .section3Body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section3HeaderButton {
+    margin-top: 32px;
+  }
+}

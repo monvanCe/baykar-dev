@@ -44,3 +44,32 @@
   top: 57%;
   right: 3%;
 }
+
+@media screen and (max-width: 1240px) {
+  .rectangle6 {
+    left: -5%;
+    top: 25%;
+  }
+  .rectangle7 {
+    left: 2%;
+  }
+  .rectangle8 {
+    left: 15%;
+    top: 85%;
+  }
+
+  .rectangle9 {
+    right: 28%;
+    top: 83%;
+  }
+
+  .rectangle10 {
+    right: 5%;
+    top: 33%;
+  }
+
+  .rectangle11 {
+    right: -2%;
+    top: 70%;
+  }
+}
