@@ -53,7 +53,11 @@ export const Question: React.FC = () => {
     <div className="questionContainer bg-dark">
       <Button
         onClick={() => {
-          setData((prev) => ({ ...prev, currentQuestion: 0, time: 30 }));
+          if (data?.questions?.length === 10) {
+            setData((prev) => ({ ...prev, currentQuestion: 0, time: 30 }));
+          } else {
+            alert('soruları yüklenmedi tekrar deneyiniz');
+          }
         }}
       >
         Teste Başla

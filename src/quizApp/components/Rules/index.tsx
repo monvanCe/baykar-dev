@@ -8,6 +8,7 @@ export const Rules: React.FC = () => {
       <div className="rulesText">{`2. İlk 10 saniye cevap veremezsiniz`}</div>
       <div className="rulesText">{`3. 30 saniyenin ardından soru otomatik geçmektedir`}</div>
       <div className="rulesText">{`4. Geçmiş sorulara dönüş yapamazsınız`}</div>
+      <div className="rulesText">{`5. Testi başlattıktan sonra durduramazsınız.`}</div>
     </div>
   );
 };

@@ -3,6 +3,8 @@ export interface Data {
   questions?: Response[];
   answers?: number[];
   currentQuestion?: number;
+  isButton?: boolean;
+  isAccelerated?: boolean;
 }
 
 export interface Response {
@@ -17,4 +19,6 @@ export const InitialData: Data = {
   questions: undefined,
   answers: Array.from({ length: 10 }, () => 0),
   currentQuestion: undefined,
+  isButton: false,
+  isAccelerated: false,
 };

@@ -8,6 +8,7 @@ import QuizApp from './quizApp';
 import { Provider } from './quizApp/data/AppContext';
 import { Results } from './quizApp/components/Results';
 import React from 'react';
+import { Countdown } from './quizApp/utils/Countdown';
 
 export const App: React.FC = () => {
   return (
@@ -16,8 +17,9 @@ export const App: React.FC = () => {
         <Route path="/" element={<Main />} />
         <Route path="figmaCase" element={<FigmaCase />} />
         <Route path="quizApp" element={<QuizApp />} />
-        <Route path="Result" element={<Results />} />
+        <Route path="results" element={<Results />} />
       </Routes>
+      <Countdown />
     </BrowserRouter>
   );
 };

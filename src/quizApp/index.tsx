@@ -4,7 +4,7 @@ import { QuestionCounter } from './components/QuestionCounter';
 import { Question } from './components/Question';
 import { Rules } from './components/Rules';
 import { Footer } from './components/Footer';
-import { Countdown } from './utils/Countdown';
+
 import { FetchQuestions } from './utils/FetchQuestions';
 
 const QuizApp: React.FC = () => {
@@ -27,7 +27,7 @@ const QuizApp: React.FC = () => {
       <div className="w-100 h-25 p-1">
         <Footer />
       </div>
-      <Countdown />
+
       <FetchQuestions />
     </div>
   );

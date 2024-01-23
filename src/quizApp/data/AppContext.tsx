@@ -20,10 +20,6 @@ export const Provider: React.FC<{ children: React.ReactNode }> = ({
 }) => {
   const [data, setData] = useState<null | Data>(InitialData);
 
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
-
   const value = {
     data,
     setData,
